@@ -174,31 +174,17 @@ font-size: 23px;
     height: 100%;
     padding: 10px;
     border-radius: 3px;
-    text-align: center;
-    
-    }
-
-.elementos form{
-    font-size: 10px;
-    width: 300px;
-    max-width: 500px; /* Define un ancho máximo para el formulario en pantallas grandes */
-    margin-left: 450px;
-    margin-bottom: 30px;
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-    
-
-}
-iframe {
     display: grid;
     margin-top: 50px;
-    width: 100%;
-    max-width: 800px; 
+    margin-left: 3px;
+    }
+
+form{
+    position: flex;
+ 
+
 }
-.elementos h2{
-padding: 5px;
-}
+
 
 #cartel{
     display:flex;
