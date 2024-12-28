@@ -1,126 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>    
-
-
-<link rel="stylesheet" href="style.css">
-    <title>Mi pagina</title>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Mi página</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
+<body>
 <header>
     <img src="/assets/logo.png" alt="LOGO" class="circular">
+    <div class="contenedor">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar..." class="input-busqueda">
+        </div>
+        <div id="carrito">
+            <a href="/carrito.html">
+                <img src="/assets/pngwing.com (3).png" id="icono-carrito" alt="Carrito">
+            </a>
+        </div>
+    </div>
     <nav>
         <ul class="barrasuperior">
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
-      </nav>
-
-
+    </nav>
 </header>
 
-
-
 <main>
-
-
-<div class="productos">
-<ul>
-    <!-- Producto Parrilla -->
-    <li class="producto">
-        <h3 class="nombre-producto">Mesa</h3>
-            <img src="assets/mesa.png" alt="Mesa">
-      
-        <a href="colecta.html">
-                <button class="boton-compra">$14.000</button>
-            </a>
-    </li>
-    <li class="producto">
-        <h3 class="nombre-producto">Parrilla</h3>
-       
-            <img src="assets/parrilla.jpg" alt="Parrilla">
-       
-        <a href="colecta.html">
-                <button class="boton-compra">$17.000</button>
-            </a>
-    </li>
-   
-    <li class="producto">
-        <h3 class="nombre-producto">Sofa</h3>
-            <img src="assets/sofa.png" alt="Sofa">
-     
-        <a href="colecta.html">
-                <button class="boton-compra">$35.000</button>
-            </a>
-    </li>
-   
-   
-
-    <!-- Producto Escritorio -->
-    <li class="producto">
-        <h3 class="nombre-producto">Escritorio</h3>
-      
-            <img src="assets/387155377_10225010920923688_6713315847560520255_n (1).jpg "Escritorio">
-       
-        <a href="colecta.html">
-                <button class="boton-compra">$50.000</button>
-            </a>
-    </li>
-
-    <li class="producto">
-        <h3 class="nombre-producto">Silla</h3>
-      
-            <img src="assets/silla.png"Silla">
-       
-        <a href="colecta.html">
-                <button class="boton-compra">$60.000</button>
-            </a>
-    </li>
-
-        
-    <li class="producto">
-        <h3 class="nombre-producto">Kettle Grill</h3>
-      
-            <img src="assets/kettle_grill.png"Escritorio">
-       
-        <a href="colecta.html">
-                <button class="boton-compra">$86.000</button>
-            </a>
-    </li>
-
-        
-</ul>
-</div>
-<!-- <select name="" id="">
-    <option value="Precio menor a mayor">Precio menor a mayor</option>
-    <option value="Precio mayor a menor">Precio mayor a menor</option>
-
-</select> -->
-
+    <div class="productos">
+        <ul>
+            <li class="producto" data-id="1" data-nombre="Mesa" data-precio="14000">
+                <h3 class="nombre-producto">Mesa</h3>
+                <img src="assets/mesa.png" alt="Mesa">
+                <button class="boton-compra">$14000</button>
+            </li>
+            <li class="producto" data-id="2" data-nombre="Parrilla" data-precio="17000">
+                <h3 class="nombre-producto">Parrilla</h3>
+                <img src="assets/parrilla.jpg" alt="Parrilla">
+                <button class="boton-compra">$17000</button>
+            </li>
+            <li class="producto" data-id="3" data-nombre="Sofa" data-precio="35000">
+                <h3 class="nombre-producto">Sofa</h3>
+                <img src="assets/sofa.png" alt="Sofa">
+                <button class="boton-compra">$35000</button>
+            </li>
+            <li class="producto" data-id="4" data-nombre="Escritorio" data-precio="50000">
+                <h3 class="nombre-producto">Escritorio</h3>
+                <img src="assets/387155377_10225010920923688_6713315847560520255_n (1).jpg" alt="Escritorio">
+                <button class="boton-compra">$50000</button>
+            </li>
+            <li class="producto" data-id="5" data-nombre="Silla" data-precio="60000">
+                <h3 class="nombre-producto">Silla</h3>
+                <img src="assets/silla.png" alt="Silla">
+                <button class="boton-compra">$60000</button>
+            </li>
+            <li class="producto" data-id="6" data-nombre="Kettle Grill" data-precio="86000">
+                <h3 class="nombre-producto">Kettle Grill</h3>
+                <img src="assets/kettle_grill.png" alt="Kettle Grill">
+                <button class="boton-compra">$86000</button>
+            </li>
+        </ul>
+    </div>
 </main>
 
- <footer>
-    <div class id="redes">
-    <a href="https://www.instagram.com">
-    <i class="fa-brands fa-instagram fa-2x" style="color: #74C0FC;"></i>
-</a>
-<a href="https://www.facebook.com">
-    <i class="fa-brands fa-facebook fa-2x" style="color: #74C0FC;"></i>
-</a>
-<a href="https://gmail.com">
-    <i class="fa-regular fa-envelope fa-2x" style="color: #74C0FC;"></i>
-</a>
-</div>
-<div class id="whatsapp">
-    <a href="https://web.whatsapp.com">
-       
-        <i class="fa-brands fa-whatsapp fa-2x" style="color: #ffffff;"></i>
-</a></div>
+<footer>
+    <div id="redes">
+        <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram fa-2x" style="color: #74C0FC;"></i>
+        </a>
+        <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook fa-2x" style="color: #74C0FC;"></i>
+        </a>
+        <a href="https://gmail.com">
+            <i class="fa-regular fa-envelope fa-2x" style="color: #74C0FC;"></i>
+        </a>
+    </div>
+    <div id="whatsapp">
+        <a href="https://web.whatsapp.com">
+            <i class="fa-brands fa-whatsapp fa-2x" style="color: #ffffff;"></i>
+        </a>
+    </div>
 </footer>
-<!--  <ul> <li> LISTA DESORDENADA </li> </ul>  -->
-<!--  <ol> <li> LISTA ORDENADA </li> </ol>  -->
 
+<script src="script.js"></script>
 </body>
 </html>
